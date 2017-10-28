@@ -1,10 +1,18 @@
 import clock from "clock";
 import document from "document";
 import userActivity from "user-activity";
-import { preferences } from "user-settings";
-import { HeartRateSensor } from "heart-rate";
-import { user } from "user-profile";
-import { locale } from "user-settings";
+import {
+  preferences
+} from "user-settings";
+import {
+  HeartRateSensor
+} from "heart-rate";
+import {
+  user
+} from "user-profile";
+import {
+  locale
+} from "user-settings";
 
 import * as util from "../common/utils";
 
@@ -73,27 +81,27 @@ function updateStats() {
   if (activeGoal > 180) {
     activeGoal = 30;
   }
-  dailysteps.innerText = stepString; 
-  let stepWidth = Math.floor(100-100*(amountSteps/stepsGoal));
-  if ( stepWidth < 0 ) {
+  dailysteps.innerText = stepString;
+  let stepWidth = Math.floor(100 - 100 * (amountSteps / stepsGoal));
+  if (stepWidth < 0) {
     stepWidth = 0;
   }
   stepRect.width = stepWidth;
-  dailycals.innerText = calString; 
-  let calWidth = Math.floor(100-100*(amountCals/caloriesGoal));
-  if ( calWidth < 0 ) {
+  dailycals.innerText = calString;
+  let calWidth = Math.floor(100 - 100 * (amountCals / caloriesGoal));
+  if (calWidth < 0) {
     calWidth = 0;
   }
   calRect.width = calWidth;
-  dailystairs.innerText = amountElevation; 
-  let stairWidth = Math.floor(100-100*(amountElevation/elevationGoal));
-  if ( stairWidth < 0 ) {
+  dailystairs.innerText = amountElevation;
+  let stairWidth = Math.floor(100 - 100 * (amountElevation / elevationGoal));
+  if (stairWidth < 0) {
     stairWidth = 0;
   }
   stairRect.width = stairWidth;
-  dailymins.innerText = amountActive; 
-  let activeWidth = Math.floor(100-100*(amountActive/activeGoal));
-  if ( activeWidth < 0 ) {
+  dailymins.innerText = amountActive;
+  let activeWidth = Math.floor(100 - 100 * (amountActive / activeGoal));
+  if (activeWidth < 0) {
     activeWidth = 0;
   }
   minRect.width = activeWidth;
@@ -102,9 +110,9 @@ function updateStats() {
 var hrm = new HeartRateSensor();
 
 hrm.onreading = function () {
-  currentheart.innerText=(hrm.heartRate || "--");
-  let heartAngle = Math.floor(360*(hrm.heartRate/190));
-  if ( heartAngle > 360 ) {
+  currentheart.innerText = (hrm.heartRate || "--");
+  let heartAngle = Math.floor(360 * (hrm.heartRate / 190));
+  if (heartAngle > 360) {
     heartAngle = 360;
   }
   heartRing.sweepAngle = heartAngle;
@@ -123,7 +131,7 @@ function updateClock() {
   let mins = util.monoDigits(util.zeroPad(today.getMinutes()));
   let secs = util.zeroPad(today.getSeconds());
   let rest = (user.restingHeartRate || "--");
-  if ( (util.monthName[lang][month] == null) || (util.weekday[lang][wday] == null) ) {
+  if ((util.monthName[lang][month] == null) || (util.weekday[lang][wday] == null)) {
     lang = "en-US";
   }
   myHour.innerText = `${hours}`;
@@ -131,7 +139,7 @@ function updateClock() {
   mySecond.innerText = `${secs}`;
   myDate.innerText = `${day}. ${util.monthName[lang][month].toUpperCase()}`;
   myDay.innerText = `${util.weekday[lang][wday].toUpperCase()}`;
-  restingheart.innerText = "R:"+`${rest}`;
+  restingheart.innerText = "R:" + `${rest}`;
   updateStats();
 }
 
@@ -150,37 +158,37 @@ function applyTheme(background, foreground) {
   activegrad.style.fill = foreground;
 }
 
-colBtn.onactivate = function(evt) {
+colBtn.onactivate = function (evt) {
   console.log("Activated!");
   switch (counter) {
-      case 0:
-        applyTheme("#5b4cff", "#17f30c"); //blau
-        counter = 1;
-        break;
-      case 1:
-        applyTheme("#ff9d00", "#ffff00"); //orange
-        counter = 2;
-        break;
-      case 2:
-        applyTheme("#b400ff", "#003aff"); //violett
-        counter = 3;
-        break;
-      case 3:
-        applyTheme("#008888", "#00eeee"); //cyan
-        counter =4;
-        break;
-      case 4:
-        applyTheme("#776600", "#eedd00"); //gold
-        counter = 5;
-        break;
-      case 5:
-        applyTheme("#cc0000", "#ffd900"); //red
-        counter = 0;
-        break;
-      default:
-        applyTheme("#cc0000", "#ff9d00"); //red
-        counter = 0;
-    }
+    case 0:
+      applyTheme("#5b4cff", "#17f30c"); //blau
+      counter = 1;
+      break;
+    case 1:
+      applyTheme("#ff9d00", "#ffff00"); //orange
+      counter = 2;
+      break;
+    case 2:
+      applyTheme("#b400ff", "#003aff"); //violett
+      counter = 3;
+      break;
+    case 3:
+      applyTheme("#008888", "#00eeee"); //cyan
+      counter = 4;
+      break;
+    case 4:
+      applyTheme("#776600", "#eedd00"); //gold
+      counter = 5;
+      break;
+    case 5:
+      applyTheme("#cc0000", "#ffd900"); //red
+      counter = 0;
+      break;
+    default:
+      applyTheme("#cc0000", "#ff9d00"); //red
+      counter = 0;
+  }
 }
 
 // Update the clock every tick event

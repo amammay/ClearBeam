@@ -31,7 +31,6 @@
   opacity: 0
 }
 
-
 #myMinute {
   font-size: 100;
   font-family: System-Light;
@@ -49,7 +48,6 @@
   x: 125;
   y: 150;
 }
-
 
 #myDate {
   font-size: 25;
@@ -71,7 +69,6 @@
   fill: #808080;
 }
 
-
 #mySteps {
   font-size: 25;
   font-family: System-Regular;
@@ -91,7 +88,6 @@
   y: 35;
   fill: #f8fcf8;
 }
-
 
 #myCals {
   font-size: 25;
@@ -123,7 +119,6 @@
   fill: #f8fcf8;
 }
 
-
 #myHR {
   font-size: 28;
   font-family: System-Regular;
@@ -152,24 +147,31 @@
 #stepsBeam {
   opacity: 1;
 }
+
 #calsBeam {
   opacity: 1;
 }
+
 #stairsBeam {
   opacity: 1;
 }
+
 #activeBeam {
   opacity: 1;
 }
+
 #stepGradient {
   opacity: 0.7;
 }
+
 #calGradient {
   opacity: 1;
 }
+
 #stairGradient {
   opacity: 0.7;
 }
+
 #activeGradient {
   opacity: 1;
 }
