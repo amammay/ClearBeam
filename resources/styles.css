@@ -1,0 +1,175 @@
+.background {
+  viewport-fill: black;
+}
+
+.mainColor {
+  fill: #cc0000;
+}
+
+.mainGradient {
+  fill: #ff9d00;
+}
+
+#myHour {
+  font-size: 100;
+  font-family: System-Light;
+  text-length: 80;
+  text-anchor: start;
+  x: 12;
+  y: 115;
+  fill: #f8fcf8;
+}
+
+#myBattery {
+  font-size: 18;
+  font-family: System-Light;
+  text-length: 80;
+  text-anchor: end;
+  x: 199;
+  y: 45;
+  fill: #f8fcf8;
+  opacity: 0
+}
+
+
+#myMinute {
+  font-size: 100;
+  font-family: System-Light;
+  text-length: 80;
+  text-anchor: start;
+  x: 12;
+  y: 195;
+}
+
+#mySecond {
+  font-size: 35;
+  font-family: System-Light;
+  text-length: 80;
+  text-anchor: start;
+  x: 125;
+  y: 150;
+}
+
+
+#myDate {
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  x: 12;
+  y: 235;
+  fill: #808080;
+}
+
+#myDay {
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 40;
+  text-anchor: start;
+  x: 12;
+  y: 25;
+  fill: #808080;
+}
+
+
+#mySteps {
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 80;
+  text-anchor: end;
+  x: 85;
+  y: 35;
+  fill: #f8fcf8;
+}
+
+#myStairs {
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 30;
+  text-anchor: end;
+  x: 85;
+  y: 35;
+  fill: #f8fcf8;
+}
+
+
+#myCals {
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 80;
+  text-anchor: end;
+  x: 85;
+  y: 35;
+  fill: #f8fcf8;
+}
+
+#myMins {
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 30;
+  text-anchor: end;
+  x: 85;
+  y: 35;
+  fill: #f8fcf8;
+}
+
+#myDist {
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 30;
+  text-anchor: end;
+  x: 85;
+  y: 35;
+  fill: #f8fcf8;
+}
+
+
+#myHR {
+  font-size: 28;
+  font-family: System-Regular;
+  text-length: 80;
+  text-anchor: end;
+  x: 50;
+  y: 35;
+  fill: #f8fcf8;
+}
+
+#myRestHR {
+  font-size: 22;
+  font-family: System-Regular;
+  text-length: 80;
+  text-anchor: end;
+  x: 50;
+  y: 50;
+  fill: #f8fcf8;
+  opacity: 0;
+}
+
+#leftSide {
+  opacity: 1;
+}
+
+#stepsBeam {
+  opacity: 1;
+}
+#calsBeam {
+  opacity: 1;
+}
+#stairsBeam {
+  opacity: 1;
+}
+#activeBeam {
+  opacity: 1;
+}
+#stepGradient {
+  opacity: 0.7;
+}
+#calGradient {
+  opacity: 1;
+}
+#stairGradient {
+  opacity: 0.7;
+}
+#activeGradient {
+  opacity: 1;
+}
