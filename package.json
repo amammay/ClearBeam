@@ -9,6 +9,41 @@
       "access_heart_rate",
       "access_user_profile",
       "access_activity"
-    ]
+    ],
+    "i18n": {
+      "en": {
+        "name": "ClearBeam"
+      },
+      "de": {
+        "name": "ClearBeam"
+      },
+      "fr": {
+        "name": "ClearBeam"
+      },
+      "es": {
+        "name": "ClearBeam"
+      },
+      "it": {
+        "name": "ClearBeam"
+      },
+      "nl": {
+        "name": "ClearBeam"
+      },
+      "sv": {
+        "name": "ClearBeam"
+      },
+      "ja": {
+        "name": "ClearBeam"
+      },
+      "ko": {
+        "name": "ClearBeam"
+      },
+      "zh-cn": {
+        "name": "ClearBeam"
+      },
+      "zh-tw": {
+        "name": "ClearBeam"
+      }
+    }
   }
 }

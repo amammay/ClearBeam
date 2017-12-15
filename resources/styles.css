@@ -3,11 +3,44 @@
 }
 
 .mainColor {
-  fill: #cc0000;
+  fill: #770000;
 }
 
 .mainGradient {
-  fill: #ff9d00;
+  fill: #ff4747;
+  x: 10;
+  y: 5;
+  width: 100;
+  height: 2;
+}
+
+.overlayRect {
+  fill: #444444;
+  x: 10;
+  y: 5;
+  width: 100;
+  height: 2;
+}
+
+.valueDisplay{
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 30;
+  text-anchor: end;
+  x: 85;
+  y: 35;
+  fill: #f8fcf8;
+}
+
+.goalDisplay {
+  font-size: 25;
+  font-family: System-Regular;
+  text-length: 80;
+  text-anchor: end;
+  x: 85;
+  y: 35;
+  fill: #808080;
+  opacity: 0;
 }
 
 #myHour {
@@ -21,15 +54,16 @@
 }
 
 #myBattery {
-  font-size: 18;
+  font-size: 22;
   font-family: System-Light;
   text-length: 80;
   text-anchor: end;
-  x: 199;
-  y: 45;
+  x: 190;
+  y: 48;
   fill: #f8fcf8;
-  opacity: 0
+  display: none;
 }
+
 
 #myMinute {
   font-size: 100;
@@ -38,6 +72,7 @@
   text-anchor: start;
   x: 12;
   y: 195;
+  fill: #bb0000;
 }
 
 #mySecond {
@@ -47,7 +82,9 @@
   text-anchor: start;
   x: 125;
   y: 150;
+  fill: #bb0000;
 }
+
 
 #myDate {
   font-size: 25;
@@ -69,55 +106,28 @@
   fill: #808080;
 }
 
+
 #mySteps {
-  font-size: 25;
-  font-family: System-Regular;
-  text-length: 80;
-  text-anchor: end;
-  x: 85;
-  y: 35;
-  fill: #f8fcf8;
+  opacity: 1;
 }
 
 #myStairs {
-  font-size: 25;
-  font-family: System-Regular;
-  text-length: 30;
-  text-anchor: end;
-  x: 85;
-  y: 35;
-  fill: #f8fcf8;
+  opacity: 1;
 }
 
+
 #myCals {
-  font-size: 25;
-  font-family: System-Regular;
-  text-length: 80;
-  text-anchor: end;
-  x: 85;
-  y: 35;
-  fill: #f8fcf8;
+  opacity: 1;
 }
 
 #myMins {
-  font-size: 25;
-  font-family: System-Regular;
-  text-length: 30;
-  text-anchor: end;
-  x: 85;
-  y: 35;
-  fill: #f8fcf8;
+  opacity: 1;
 }
 
 #myDist {
-  font-size: 25;
-  font-family: System-Regular;
-  text-length: 30;
-  text-anchor: end;
-  x: 85;
-  y: 35;
-  fill: #f8fcf8;
+  opacity: 1;
 }
+
 
 #myHR {
   font-size: 28;
@@ -130,7 +140,7 @@
 }
 
 #myRestHR {
-  font-size: 22;
+  font-size: 24;
   font-family: System-Regular;
   text-length: 80;
   text-anchor: end;
@@ -147,31 +157,24 @@
 #stepsBeam {
   opacity: 1;
 }
-
 #calsBeam {
   opacity: 1;
 }
-
 #stairsBeam {
   opacity: 1;
 }
-
 #activeBeam {
   opacity: 1;
 }
-
 #stepGradient {
   opacity: 0.7;
 }
-
 #calGradient {
   opacity: 1;
 }
-
 #stairGradient {
   opacity: 0.7;
 }
-
 #activeGradient {
   opacity: 1;
 }
